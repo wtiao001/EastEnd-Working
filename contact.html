@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat|Nunito:200,400" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <title>Contact | East End Entertainment</title>
+</head>
+
+<body>
+    <div class="nav-wrapper">
+        <div class="nav">
+            <img src="media/images/eastend_logo.svg" alt="" class="logo">
+            <div class="hamburger">
+                <div class="menu-button"></div>
+            </div>
+            <div class="nav-item-wrap">
+                <a href="index.html" class="nav-item"><span>projects</span></a>
+                <a href="about.html" class="nav-item"><span>about</span></a>
+                <a href="contact.html" class="nav-item active"><span>contact</span></a>
+            </div>
+        </div>
+        <div class="menu-nav">
+            <a href="index.html" class="nav-item menu"><span>projects</span></a>
+            <a href="about.html" class="nav-item menu"><span>about</span></a>
+            <a href="contact.html" class="nav-item menu"><span>contact</span></a>        
+        </div>
+    </div>
+
+    <div class="contact-wrap">
+        <div class="contact-info">
+          <div class="c-inner-wrap">
+               <div class="c-info">
+                   <h1>HQ</h1>
+                   <h2>Los Angeles</h2>
+                   <p>123 Hollywood Blvd.<br>
+                      Los Angeles, CA <br>
+                      (123) 123-1234
+                   </p>
+               </div>
+               <div class="c-info">
+                   <h1>Founder</h1>
+                   <h2>Carrol Middelthon</h2>
+                   <p>carrolmid@eastend.com<br>
+                      (123) 123-1234
+                   </p>
+               </div>
+               <div class="c-info">
+                   <h1>Creative Director</h1>
+                   <h2>Paige Mobley</h2>
+                   <p>paigemob@eastend.com<br>
+                      (123) 123-1234
+                   </p>
+               </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+    // HAMBURGER MENU 
+    $(document).ready(function(){
+        $('.hamburger').click(function(){
+            $('.menu-button').toggleClass('open');
+            $('.menu-nav').toggleClass('open');
+        }); 
+        $('.c-inner-wrap').addClass('active');
+    });
+</script>
