@@ -3,7 +3,11 @@
     margin: 0;
     padding: 0;
     user-select: none;
+    
 }
+::-webkit-touch-callout {
+    display: none;    
+} 
 ::-webkit-scrollbar { 
     display: none; 
 }
@@ -11,6 +15,7 @@ body {
     background: black;
     max-width: 100%;
     max-height: 100%;
+    overflow: hidden;
 }
 
 /******** NAVIGATION ********/
@@ -58,7 +63,7 @@ body {
     content:'';
     position: absolute;
     width: 30px;
-    height: 3px;
+    height: 1.5px;
     background: white;
     border-radius: 1px;
     transition: all .3s ease;
@@ -182,8 +187,9 @@ body {
 }
 
 .carousel {
-  background: #000;
+    background: #000;
 /*  margin-top: 5em;*/
+    
 }
 
 .carousel-cell {
@@ -195,7 +201,6 @@ body {
     margin-bottom: 10em;
     opacity: 1;
     transition: opacity 1s ease;
-
 }
 
 .centered-cells {
@@ -571,8 +576,8 @@ body {
         bottom: -120px;
     }
     
-    .video-info h1 {
-        font-size: 20px;   
+    .video-info h1, .video-info h2 {
+        font-size: 15px;   
     }
     
     .video-info p {
@@ -745,6 +750,9 @@ body {
         display: inline-block;
         float: right;
     }
+    .nav-item {
+        margin-left: 0;    
+    }
     .menu-nav {
         display: block;
     }
@@ -760,6 +768,13 @@ body {
     }
     .personal-info {
         width: 100%;
+    }
+    .footer {
+        height: 40px;
+    }
+
+    .footer p{
+        font-size: 11px;
     }
 }
 
@@ -830,3 +845,30 @@ body {
         1px 1px 0 #fff;
     }
 }
+
+/* PAGE TRANSITION STYLES */
+/*
+.m-scene .scene-element {
+    animation-duration: .3s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;   
+}
+
+.m-scene .scene-element-main {
+    animation-duration: 0.5s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;   
+}
+.m-scene .scene-fade {
+    animation-name: fadeIn;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+*/

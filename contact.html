@@ -7,10 +7,12 @@
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat|Nunito:200,400" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
+    <script src="js/smoothState.js"></script>
     <title>Contact | East End Entertainment</title>
 </head>
 
 <body>
+   <div id="main" class="m-scene">
     <div class="nav-wrapper">
         <div class="nav">
             <img src="media/images/eastend_logo.svg" alt="" class="logo">
@@ -29,7 +31,7 @@
             <a href="contact.html" class="nav-item menu"><span>contact</span></a>        
         </div>
     </div>
-
+<div class="scene-element scene-fade">
     <div class="contact-wrap">
         <div class="contact-info">
           <div class="c-inner-wrap">
@@ -58,6 +60,8 @@
           </div>
         </div>
     </div>
+       </div>
+    </div>
 </body>
 </html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,4 +74,8 @@
         }); 
         $('.c-inner-wrap').addClass('active');
     });
+    // SMOOTH STATE 
+//    $(function() {
+//      $('#main').smoothState();
+//    }); 
 </script>
