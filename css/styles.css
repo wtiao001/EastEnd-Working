@@ -310,7 +310,7 @@ body {
 }
 
 .flickity-page-dots {
-  bottom: 0;
+  bottom: -15px;
 }
 
 .flickity-page-dots .dot {
@@ -514,7 +514,7 @@ body {
     }
     
     .flickity-page-dots {
-        top: 500px;
+        top: 520px;
     }
     
     .carousel-cell {
