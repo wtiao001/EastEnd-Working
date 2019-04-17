@@ -20,6 +20,15 @@
 </head>
 
 <body>
+
+<div class="preloader">
+    <div id="progress-bar">
+      <div id="progress"></div>
+      <p>
+        <span id="percentage">0%</span> of cute kittens loaded...
+      </p>
+    </div>
+</div>
 <div id="main" class="m-scene">
     <div class="nav-wrapper">
         <div class="nav">
@@ -245,6 +254,33 @@
    
 <script>
     
+     var countImages = $('video').size();
+console.log(countImages)
+
+$('#gallery').imagesLoaded()
+.always( function( instance ) {
+  $('#progress-bar').fadeOut(function() {
+  });
+})
+.progress( function( instance, image ) {
+  if(image.isLoaded) {
+    $(image.video).addClass('loaded');
+    
+    var countLoadedImages = $('video.loaded').size();
+    
+    var width = new Number(100 * (countLoadedImages / countImages));
+    width = width.toFixed(2) + '%';
+    
+    $('#progress-bar > #progress').css({
+      'width' : width
+    });
+    
+    $('#progress-bar > p > span').html(width);
+  }
+    });   
+    
+
+
     // HAMBURGER MENU 
     $(document).ready(function(){
         $('.hamburger').click(function(){
@@ -369,8 +405,8 @@
 });
     
     // SMOOTH STATE 
-//    $(function() {
-//      $('#main').smoothState();
-//    }); 
+    $(function() {
+      $('#main').smoothState();
+    }); 
     
 </script>
