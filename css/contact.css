@@ -217,6 +217,7 @@ body {
     height: 100%;
     justify-content: space-around;
     max-width: 1500px;
+    
 }
 
 .c-info {
@@ -251,6 +252,43 @@ body {
     color: #c4c4c4;
 }
 
+.footer {
+    position: fixed;
+    width: 100%;
+    border-top: solid .5px #2d2d2d;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background-color: #000;
+}
+
+.footer p{
+    color: #FFF;
+    padding: 2em;
+    font-family: "Montserrat";
+    color: dimgrey;
+    font-size: 14px;
+}
+
+.social {
+    padding-right: 2em;
+}
+
+.social i {
+    font-size: 30px;
+    color: dimgrey;
+    margin-right: 24px;
+    transition: all .3s ease;
+}
+
+.social i:hover {
+    color: #FFF;
+}
+
 /* TEXT UP ANIMATION */
 .c-inner-wrap .c-info:nth-child(1) {
     transform: translateY(20px);
@@ -275,9 +313,8 @@ body {
 
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 100px) {
 .c-inner-wrap {
-/*        border: solid green;*/
         flex-direction: row;
         width: 100%;
         align-items: center;
@@ -294,6 +331,18 @@ body {
     }
     .nav {
         width: 90%;
+    }
+    
+    .footer {
+        height: 40px;
+    }
+
+    .footer p{
+        font-size: 11px;
+    }
+    
+    .footer i {
+        font-size: 22px;
     }
 }
 @media screen and (max-width: 600px) {
@@ -318,4 +367,26 @@ body {
     }
 }
 
+/* PAGE TRANSITION STYLES */
+.m-scene .scene-element {
+    animation-duration: 1s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;   
+}
+.m-scene .scene-element-main {
+    animation-duration: 0.5s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;   
+}
+.m-scene .scene-fade {
+    animation-name: fadeIn;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
 
+  100% {
+    opacity: 1;
+  }
+}

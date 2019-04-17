@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     user-select: none;
-    
 }
 ::-webkit-touch-callout {
     display: none;    
@@ -480,6 +479,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 10;
+    background-color: #000;
 }
 
 .footer p{
@@ -509,10 +509,6 @@ body {
 
 @media screen and (max-height: 770px) {
     
-    .video-info {
-        
-    }
-    
     .flickity-page-dots {
         top: 520px;
     }
@@ -524,7 +520,6 @@ body {
         top: 360px;
     }
 }
-
 
 @media screen and (max-width: 800px) {
     
@@ -546,12 +541,7 @@ body {
 }
 
 @media screen and (max-width: 560px) {
-    
-/*
-    .video-info {
-        top: 460px;
-    }
-*/
+
     
     .flickity-prev-next-button {
         display: none;
@@ -776,6 +766,10 @@ body {
     .footer p{
         font-size: 11px;
     }
+    
+    .footer i {
+        font-size: 22px;
+    }
 }
 
 @media screen and (min-width: 375px) {
@@ -846,63 +840,27 @@ body {
     }
 }
 
-/* PAGE TRANSITION STYLES */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* PAGE TRANSITIONS */
+
 .m-scene .scene-element {
-    animation-duration: .3s;
+    animation-duration: 0.25s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;   
 }
-
 .m-scene .scene-element-main {
-    animation-duration: 0.5s;
+    animation-duration: 0.25s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;   
 }
 .m-scene .scene-fade {
-    animation-name: fadeIn;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+    animation-name: fade;
 }
 
-
-.preloader {
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    max-width: 100%;
-    max-height: 100%;
-    background: black;
-}
-#progress-bar {
-  height: 30px;
-  display: block;
-  width: 300px;
-  margin: 0 auto;
-  background: transparent;
-  padding: 5px;
-  margin-top: 150px;
-  border: 3px solid #00a6ff;
-  text-align: center;
-  position: relative;
-}
-
-#progress-bar > #progress {
-  width: 0%;
-  height: 100%;
-  background: #00a6ff;
-}
-
-#progress-bar > p {
-  vertical-align: middle;
-  display: inline-block;
-  color: white;
-  font-weight: bold;
-  margin: -50px auto 0;
-}
