@@ -19,6 +19,7 @@ body {
     text-align: center;
     position: fixed;
     z-index: 100;
+    background: black;
 }
 .nav {
     display: inline-block;
@@ -385,6 +386,10 @@ body {
     bottom: 4%;;
     display: none;
     padding-bottom: 7vh;
+    opacity: 1;
+}
+.swipe-indicator.open {
+    opacity: 0;
 }
 .swipe-indicator svg {
     float: right;
@@ -422,6 +427,9 @@ body {
     .mission-statement-wrap {
         font-size: 7.9vw;
         margin-top: 25px;
+    }
+    .nav-wrapper {
+        background: transparent;
     }
     .personal-info {
         width: 100%;
