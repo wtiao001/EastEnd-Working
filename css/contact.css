@@ -23,6 +23,7 @@ body {
     display: inline-block;
     position: relative;
     width: 80%;
+    background: black;
 }
 .logo {
     height: 20px;
@@ -313,7 +314,7 @@ body {
 
 
 
-@media screen and (min-width: 100px) {
+@media screen and (min-width: 1000px) {
 .c-inner-wrap {
         flex-direction: row;
         width: 100%;
