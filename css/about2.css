@@ -155,6 +155,7 @@ body {
     opacity: 0;
     padding-top: 20vh;
     height: 0;
+    display: none;
 }
 .menu-nav.open {
     visibility: visible;
