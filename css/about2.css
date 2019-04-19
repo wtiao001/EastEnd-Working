@@ -259,8 +259,8 @@ body {
 .img-wrap {
     display: inline-block;;
     position: absolute;
-    width: 400px;
-    height: 500px;
+    width: 500px;
+    height: 600px;
     left: 63%;
     overflow: hidden;
 }
