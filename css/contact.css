@@ -333,7 +333,12 @@ body {
     .nav {
         width: 90%;
     }
-    
+    .menu-nav {
+        display: block;
+    }
+    .nav-item-wrap {
+        display: none;
+    }
     .footer {
         height: 40px;
     }
