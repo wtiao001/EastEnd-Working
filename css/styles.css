@@ -180,7 +180,7 @@ body {
 
 .carousel-wrap {
     height: calc(100% - 18px);
-    display: fixed;
+    position: fixed;
     flex-direction: column;
     justify-content: center;
     border: solid red;
