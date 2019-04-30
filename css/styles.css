@@ -1,4 +1,4 @@
-/******** BASE STYLES ********/
+c/******** BASE STYLES ********/
 * {
     margin: 0;
     padding: 0;
@@ -180,7 +180,7 @@ body {
 
 .carousel-wrap {
     height: calc(100vh - 18px);
-    display: flex;
+    display: fixed;
     flex-direction: column;
     justify-content: center;
     border: solid red;
