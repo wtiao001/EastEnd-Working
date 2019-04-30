@@ -179,7 +179,7 @@ body {
 
 
 .carousel-wrap {
-    height: calc(100% - 18px);
+    height: calc(100vh - 18px);
     width: 100vw;
     position: fixed;
     flex-direction: column;
